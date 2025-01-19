@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.advert-card {
+    background-color: #fff;
+    border: 2px solid #9747ff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    margin: 20px;
+}
+
+.advert-card-name {
+    background-color: #DEE2E6;
+    padding: 15px;
+}
+
+.advert-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.advert-card.mixing {
+    border-color: #4200ff;
+}
+
+.advert-card.producing {
+    border-color: #ff9f00;
+}
+
+.advert-card.mastering {
+    border-color: rgb(0, 255, 56);
+}
+

@@ -1,0 +1,26 @@
+.see-more .advert-card {
+    margin-bottom: 30px;
+}
+
+.advert-card-details-holder {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.advert-card-details-1st {
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.advert-card-details-2nd {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 48%;
+    flex-shrink: 0;
+}
+
+.advert-card-phone {
+    color: black;
+}

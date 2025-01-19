@@ -1,0 +1,5 @@
+.DS_STORE
+backend/node_modules
+frontend/node_modules
+.idea
+.env
