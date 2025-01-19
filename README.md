@@ -31,6 +31,10 @@ dźwięku i producentów muzycznych
 
     - User ⇔ Role ⇔ UserSkill ⇔ Skill
         - Usunięcie rekordu tego połączenia skutkuje oprócz usunięcia rekordów z tabel User i UserSkill, usunięciem pozostałych powiązanych z użytkownikiem rekordów tj. rekordy w tabeli UserAdvert oraz Advert (logika biznesowa)
-### Dodatkowo
+### Dodatkowe informacje dot. funkcjonalności
 - Możliwość rejestracji administratora  
   za pomocą końcówki zabezpieczonej za pomocą hasła znajdującego się w zmiennych środowiskowych (dotenv) serwera.# adverts-project-app-master
+
+### Informacje dot. testowania
+- Przykładowe dane i skrypt tworzący bazę danych, znajdują się w plikach 
+ katalogu /backend/src/assets
