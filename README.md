@@ -35,6 +35,6 @@ dźwięku i producentów muzycznych
 - Możliwość rejestracji administratora  
   za pomocą końcówki zabezpieczonej za pomocą hasła znajdującego się w zmiennych środowiskowych (dotenv) serwera.# adverts-project-app-master
 
-### Informacje dot. testowania
+## Informacje dot. testowania
 - Przykładowe dane i skrypt tworzący bazę danych, znajdują się w plikach 
  katalogu /backend/src/assets
