@@ -33,4 +33,4 @@ dźwięku i producentów muzycznych
         - Usunięcie rekordu tego połączenia skutkuje oprócz usunięcia rekordów z tabel User i UserSkill, usunięciem pozostałych powiązanych z użytkownikiem rekordów tj. rekordy w tabeli UserAdvert oraz Advert (logika biznesowa)
 ### Dodatkowo
 - Możliwość rejestracji administratora  
-  za pomocą końcówki zabezpieczonej za pomocą hasła znajdującego się w zmiennych środowiskowych (dotenv) serwera.
+  za pomocą końcówki zabezpieczonej za pomocą hasła znajdującego się w zmiennych środowiskowych (dotenv) serwera.# adverts-project-app-master
