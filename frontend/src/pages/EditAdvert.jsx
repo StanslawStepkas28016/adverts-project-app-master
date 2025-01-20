@@ -5,7 +5,6 @@ import {useLocation, useNavigate} from "react-router-dom";
 import {axiosInstance} from "../lib/axios.js";
 import {Alert, Box, Button, FormControlLabel, Radio, RadioGroup, TextField, Typography} from "@mui/material";
 import PublishIcon from '@mui/icons-material/Publish';
-import AlertBox from "../components/AlertBox.jsx";
 
 const EditAdvert = () => {
     const location = useLocation();
@@ -16,10 +15,6 @@ const EditAdvert = () => {
     const [errorMessage, setErrorMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
     const navigate = useNavigate();
-
-    useEffect(() => {
-        // console.log(userAdvertData);
-    })
 
     const patchAdvert = async (fieldsToUpdate) => {
         try {
@@ -53,12 +48,16 @@ const EditAdvert = () => {
     }
 
     const validFields = (fields) => {
+        if (fields.Description.length >= 500) {
+            setErrorMessage("Description cannot exceed 500 characters!");
+            return false;
+        }
         if (Object.keys(fields).length === 0) {
             setErrorMessage("No fields to update found, please modify something or quit!")
             return false;
-        } else {
-            return true;
         }
+
+        return true;
     }
 
     const handleSubmit = async (e) => {
