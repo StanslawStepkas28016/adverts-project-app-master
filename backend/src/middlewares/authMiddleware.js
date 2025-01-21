@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import {connectionPool} from "../lib/dbUtil.js";
 
-export const protectRouteForAnyUser = async (req, res, next) => {
+export const protectRouteForLoggedUser = async (req, res, next) => {
     try {
         const token = req.cookies.jwt;
 

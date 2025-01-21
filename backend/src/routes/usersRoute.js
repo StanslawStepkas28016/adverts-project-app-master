@@ -1,6 +1,6 @@
 import express from "express";
 import {connectionPool} from "../lib/dbUtil.js";
-import {protectRouteForAdmin, protectRouteForAnyUser} from "../middlewares/authMiddleware.js";
+import {protectRouteForAdmin, protectRouteForLoggedUser} from "../middlewares/authMiddleware.js";
 import sql from "mssql";
 import {
     deleteUserJoinedWithTables,
@@ -11,10 +11,10 @@ import {
 const router = express.Router();
 
 // Pozyskanie danych do modyfikacji (w tym przypadku numer telefonu użytkownika)
-router.get("/:idUser(\\d+)", protectRouteForAnyUser, getUserDetails);
+router.get("/:idUser(\\d+)", protectRouteForLoggedUser, getUserDetails);
 
 // Modyfikacja danych użytkownika (numer telefonu).
-router.patch("/:idUser", protectRouteForAnyUser, modifyUserDetails);
+router.patch("/:idUser", protectRouteForLoggedUser, modifyUserDetails);
 
 // Połączenie tabel User, Role, UserSkill, Skill
 router.get("/joined-data", protectRouteForAdmin, getAllUsersJoinedWithTables);
